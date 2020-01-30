@@ -175,12 +175,11 @@ header {
     position: fixed;
     width: 40px;
     height: 40px;
-    background: #FFFFFF;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding-left: 10px;
-    position: fixed;
-    right: 33px;
+    right: 24px;
+    z-index: 999999;
 }
 
 .features-wrapper {

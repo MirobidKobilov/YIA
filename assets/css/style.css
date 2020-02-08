@@ -883,55 +883,56 @@ header {
   	background-color: #0a6bdc;
 }
 
-.robotics {
-    background-image: url(../../img/pupils_robotics.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    border-radius: 10px;
-
-}
-
 .robotics-gr {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.14%, rgba(30, 31, 86, 0.68) 77.09%);
     border: 1px solid #D8D8D8;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
-.robotics h4 {
+.robotics-gr img {
+    position: absolute;
+    width: 130%;
+    z-index: -1;
+    
+}
+
+.robotics-gr h4 {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 35px;
     color: #FBFBFB;
-    margin-top: 213px;
-    margin-left: 64px;
+    padding-top: 213px;
+    padding-left: 64px;
 }
 
-.robotics p {
+.robotics-gr p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #FBFBFB;
-    margin-top: 10px;
-    margin-left: 64px;
+    padding-top: 10px;
+    padding-left: 64px;
     padding-bottom: 16px;
 }
 
-.ex-president {
-    background-image: url(../../img/Islam_Karimov.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.ex-president-gr {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(0.65deg, #FFFFFF 39.49%, rgba(255, 255, 255, 0) 52.83%),linear-gradient(90deg, #FFFFFF 47.34%, rgba(255, 255, 255, 0) 63.32%) ;
     border-radius: 10px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
 
-.ex-president-gr {
-    background: linear-gradient(0.65deg, #FFFFFF 39.49%, rgba(255, 255, 255, 0) 52.83%),linear-gradient(90deg, #FFFFFF 47.34%, rgba(255, 255, 255, 0) 63.32%) ;
-    border-radius: 10px;
+.ex-president-gr img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 .bday-date {
@@ -985,7 +986,7 @@ header {
     color: #FFFFFF;
 }
 
-.ex-president p {
+.ex-president-gr p {
     padding-top: 28px;
     padding-left: 34px;
     padding-bottom: 30px;
@@ -1003,14 +1004,16 @@ header {
 }
 
 .bag-boy {
+    position: relative;
     height: 239px;
-
-    background-image: url(../../img/bag.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     border: 1px solid #D8D8D8;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.bag-boy img {
+    position: absolute;
+    width: 100%;
 }
 
 .bag-boy-text p {
@@ -1034,14 +1037,16 @@ header {
 }
 
 .room {
+    position: relative;
+    overflow: hidden;
     height: 239px;
-
-    background-image: url(../../img/room.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     border: 1px solid #D8D8D8;
     border-radius: 10px;
+}
+
+.room  img {
+    position: absolute;
+    width: 120%;
 }
 
 .room-text p {
@@ -1066,14 +1071,16 @@ header {
 }
 
 .girls-voice {
+    position: relative;
     height: 239px;
-
-    background-image: url(../../img/girls_voice.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     border: 1px solid #D8D8D8;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.girls-voice img {
+    position: absolute;
+    width: 120%;
 }
 
 .girls-voice-text p {
@@ -1778,27 +1785,7 @@ header {
 
 @media screen and (max-width: 1800px) {
     .comma {
-        top: 35%;
-    }
-}
-
-
-@media screen and (max-width: 1200px) {
-    .header {
-        padding-bottom: 200px;
-    }
-    .comma {
-        position: absolute;
-        max-width: 80%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .director-img {
-        max-width: 30%;
-        max-height: 80%;
-        margin-left: auto;
-        margin-top: auto;
+        top: 40%;
     }
     .footer-form textarea {
         margin-top: 17px;
@@ -1809,31 +1796,245 @@ header {
         padding-top: 12px;
         padding-bottom: 10px;
     }
+}
+
+/* -------------------------------- */
+
+
+@media screen and (max-width: 1200px) {
+    .header {
+        padding-bottom: 90px;
+    }
+
+    .logo-text a {
+        font-size: 24px;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .join-btn {
+        margin-top: 16px;
+    }
+
+    .nav-ul li {
+        padding-right: 30px;
+        font-size: 16px;
+    }
+
+    .nav-search:focus {
+        width: 540px;
+    }
+
+    .features-item {
+        margin-top: 30px;
+    }
+
+    .success-comments {
+        width: 450px !important;
+    }
+
+    .comma {
+        position: absolute;
+        max-width: 80%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .director-img {
+        max-width: 30%;
+        max-height: 80%;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .footer-form textarea {
+        margin-top: 17px;
+        margin-bottom: 17px;
+        padding-top: 12px;
+    }
+
+    .footer-top-input {
+        padding-top: 12px;
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+    }
+
+    .footer-form button {
+        padding: 18px 60px;
+    }
+
     .slick-prev {
         left: 855px !important;
     }
+
     .comment-slider .slick-prev {
-        left: 535px !important;
+        left: 450px !important;
+        top: 500px !important;
     }
+
     .comment-slider .slick-next {
-        right: 0px !important;
+        right: 85px !important;
+        top: 500px !important;
+    }
+
+    .cell-phone {
+        position: absolute;
+        right: 50;
+        top: 60;
+        width: 280px;
+        height: 371px;
+    }
+
+    .mobile-app h2 {
+    font-size: 35px;
+    }
+
+    .ex-president p {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .bag-boy, .girls-voice, .room {
+        max-height: 220px;
+    }
+
+    .nav-ul li.active:after {
+        bottom: -20px;
 }
+
+/* ------------------------------------- */
 
 @media screen and (max-width: 992px) {
     .slick-prev {
         left: 620px !important;
     }
+
     .comment-slider .slick-prev {
-        left: 380px !important;
+        left: 300px !important;
         z-index: 2;
         top: 550px !important;
     }
+
     .comment-slider .slick-next {
-        right: 0 !important;
+        right: 75 !important;
         top: 470px !important;
         top: 550px !important;
-    }   
+    }
+
+    .comment-avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .success-comments p {
+        font-size: 14px; 
+    }
+
+    .success-comments {
+        width: 300px !important;
+    }
+
+    .bday-date:before {
+        border-left: 35px solid transparent;
+        border-bottom: 10px solid white;
+    }
+
+    .bday-date:after {
+        border-right: 35px solid transparent;
+        border-bottom: 10px solid white;
+    }
+
+    .bday-date {
+        width: 70px;
+        height: 100px;
+    }
+
+    .ex-president-gr p {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .robotics-gr h4 {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 18px;
+        color: #FBFBFB;
+        padding-top: 150px;
+        padding-left: 20px;
+    }
+
+    .robotics-gr p {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FBFBFB;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .bag-boy, .girls-voice, .room {
+        max-height: 158px;
+    }
+
+    .quote-text-wrapper p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .app-download {
+        margin-right: -10px;
+    }
+
+    .sponsors-wrapper img {
+        height: 28px;
+    }
+
+    .footer-form button {
+        padding: 16px 40px;
+    }
+
+    .hero-h1 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .hero-h3 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .join-btn {
+        margin-top: 36px;
+        background-color: #0188FF;
+        color: #fff;
+        font-size: 12px;    
+        line-height: 20px;
+        padding: 10px 20px;   
+    }
+
+    .nav-ul {
+        padding-left: 0;
+    }
+
+    .logo-text a {
+        padding-right: 320px;
+    }
+
+    .header-scroll .logo-text a {
+        padding-right: 340px;
+    } 
+
 }
+
+/* --------------------------------------- */
 
 @media screen and (max-width: 768px) {
     .slick-prev {

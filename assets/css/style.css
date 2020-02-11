@@ -149,6 +149,8 @@ header {
     width: 666px;
     -webkit-transition: width 0.4s ease-out;
     transition: width 0.4s ease-out;
+    outline: none;
+    border-bottom: 1px solid #CFCFCF;
   }
 
 .nav-search:hover {
@@ -1183,10 +1185,15 @@ header {
     
 }
 
+.interview-1 img {
+    right: 0;
+}
+
 .interview-1-text {
     position: absolute;
     top: 24;
     left: 24;
+    z-index: 3;
 }
 
 .interview-1 p {
@@ -1229,6 +1236,11 @@ header {
     position: absolute;
     top: 24;
     left: 24;
+    z-index: 4;
+}
+
+.interview-2 img {
+    right: 0;
 }
 
 .interview-2 p {
@@ -1274,6 +1286,7 @@ header {
     position: absolute;
     bottom: 24;
     left: 24;
+    z-index: 4;
 }
 
 .interview-3 p {
@@ -1779,6 +1792,18 @@ header {
     padding: 10px 0;
 }
 
+.mobile-navbar {
+    display: none;
+}
+
+.header-mobile-bg {
+    display: none;
+}
+
+.mobile-nav-menu {
+    display: none;
+}
+
 
 /* medias */
 
@@ -1981,6 +2006,7 @@ header {
     }
 
     .bag-boy, .girls-voice, .room {
+        min-height: 158px;
         max-height: 158px;
     }
 
@@ -2032,16 +2058,633 @@ header {
         padding-right: 340px;
     } 
 
+    .comment-slider .slick-next {
+        right: 80px !important;
+    }
+
+    .massenger-icons {
+        padding-right: 12px;
+    }
+
 }
 
 /* --------------------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .slick-prev {
-        left: 620px !important;
+        left: 440px !important;
+    }
+
+    .dots {
+        display: none;
+    }
+    .adress-text {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .footer-60 {
+        width: 50%;
+        padding: 24px 24px 0 24px;
+    }
+
+    .footer-40 {
+        width: 50%;
+    }
+
+    .footer-form-text h3 {
+        font-size: 26px;
+        line-height: 32px;
+        padding-bottom: 24px;
+    }
+    .footer-top-input {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 8px;
+        width: 155px;
+        font-size: 12px;
+        line-height: 16px;
+        padding-left: 8px;
+    }
+    .footer-form textarea {
+        padding-left: 6px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-form button {
+        padding: 8px 19px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .footer-contacts {
+        padding: 24px 24px 0 24px;
+    }
+    .massenger-icons {
+        padding-right: 14px;
+    }
+    .footer-contacts p {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 34px;
+    }
+
+    .footer-contacts h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .footer-contacts h4 {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 9px;
+    }
+
+    .footer-bottom {
+        padding: 18px 24px;
+        font-size: 10px;
+        line-height: 26px;
+    }
+    .mobile-app h2 {
+        color: #FBFBFB;
+        margin-top: 28px;
+        margin-left: 42px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .app-download {
+        padding-left: 32px;
+        padding-bottom: 68px;
+    }
+
+    .mobile-app p {
+        font-size: 12px;
+        color: #FBFBFB;
+        margin-top: 12px;
+        margin-right: 42px;
+        margin-left: 42px;
+    }
+
+    .mobile-hr {
+        color: #fff;
+        border-color: #fff;
+        width: 345px;
+        margin-left: 0px;
+    }
+
+    .cell-phone {
+        right: 130px;
+        top: 20px;
+        width: 120px;
+        height: 170px;
+    }
+
+    .sponsors-wrapper {
+        padding: 32px 0;
+
+    }
+    .sponsors-wrapper img {
+        height: 20px;
+    }
+
+    .comment-slider .slick-next {
+        right: 135px !important;
+    }
+    .slick-dots {
+        bottom: -15px;
+    }
+
+    .interview-1, .interview-2, .interview-3 {
+        margin-bottom: 30px;
+    }
+
+    .robotics-gr {
+        margin-bottom: 30px;
+    }
+    .bag-boy, .girls-voice, .room {
+        max-height: unset;
+    }
+    .logo-text a {
+        padding-right: 120px;
+    }
+    .nav-ul li {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .header-scroll .logo-text a {
+        padding-right: 200px;
     }
 }
 
 @media screen and (max-width: 576px) { 
+    .header-noscroll {
+        display: none;
+    }
 
+    .header-scroll {
+        display: none;
+    }
+
+    .mobile-navbar {
+        background-color: #fff;
+        display: block;
+        padding: 20px 0;
+    }
+
+    .mobile-nav-menu {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;  
+        background-color: #fff;
+        display: block;
+        padding: 20px 0;
+        /* display: none; */
+    }
+
+    .mobile-nav-menu .logo-text a {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0088FF;
+        padding: 0;
+    }
+
+    .hamburger-quit {
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+    .hamburger-quit:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '\d7';
+        font-size: 30px;
+        color: #0088FF;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .mobile-search {
+        border: none;
+        padding-left: 25px;
+        background-image: url(../../img/search_icon.svg);
+        background-repeat: no-repeat;
+        background-position: left 5px center;
+        width: 100%;
+        margin-top: 26px;
+        border-bottom: 1px solid #cfcfcf;
+        margin-bottom: 32px;
+    }
+
+    .mobile-nav-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 64px;
+    }
+
+    .mobile-nav-menu li a {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #1E1F56;
+    }
+
+    .mobile-nav-menu ul hr {
+        width: 100%;
+    }
+
+    .langs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 32px;
+    }
+
+    .langs a {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1E1F56;
+    }
+
+    .mobile-cap-wrapper {
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    .capacities {
+        color: #1E1F56;
+    }
+
+    .mobile-copyright {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #A5A5A5;
+    }
+
+    .mobile-copyright p a {
+        color: #0188FF;
+    }
+
+
+
+
+
+
+
+
+    .mobile-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-navbar .logo-text a {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0088FF;
+        padding: 0;
+    }
+    .hamburger span {
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: #0088FF;
+        margin-bottom: 2px;
+    }
+
+    .hero-h1 {
+        font-size: 22px;
+        line-height: 27px;
+        padding-right: 90px;
+        padding-top: 32px;
+    }
+
+    .hero-h3 {
+        font-size: 14px;
+        line-height: 17px;
+        padding-right: 80px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header .header-mobile-bg {
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .header svg {
+        display: none;
+    }
+
+    .join-btn {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0188FF;
+        background-color: #fff;
+        padding: 12px 18px;
+        margin-top: 20px;
+    }
+
+    .hands-gr {
+        margin-bottom: 30px;
+    }
+    .incubator-gr {
+        margin-bottom: 30px;
+    }
+    .patriot-gr {
+        margin-bottom: 30px;
+    }
+
+    .success-comments p {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 18px;
+    }
+    .success-comment-wrapper {
+        padding-left: 5px;
+        padding-right: 90px;
+    }
+
+    .comment-slider .slick-next {
+        top: 455px !important;
+        right: 0 !important;
+    
+    }
+    .comment-slider .slick-prev {
+        left: 325px !important;
+        top: 455px !important;
+    }
+    .slick-dots {
+        bottom: -15px;
+    }
+
+    .robotics-gr {
+        margin-bottom: 30px;
+    }
+
+    .heads {
+        overflow: hidden;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heads img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .bag-boy-text h5, .room-text h5, .girls-voice-text h5 {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .interview-1, .interview-2, .interview-3 {
+        margin-bottom: 30px;
+    }
+
+    .bag-boy-text p, .room-text p, .girls-voice-text p {
+        font-size: 14px;
+    }
+
+    .robotics-gr img {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .director-img {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .quotes-wrapper {
+        flex-direction: column;
+    }
+    .quote-text-wrapper {
+        margin: 20px auto;
+
+    }
+    .quotes {
+        background-position: top center;
+        height: unset;
+    }
+    .slick-prev {
+        left: 325px !important;
+    }
+    
+
+    .mobile-app h2 {
+        color: #FBFBFB;
+        margin-top: 28px;
+        margin-left: 42px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .app-download {
+        padding-left: 32px;
+        padding-bottom: 68px;
+    }
+
+    .mobile-app p {
+        font-size: 12px;
+        color: #FBFBFB;
+        margin-top: 12px;
+        margin-right: 42px;
+        margin-left: 42px;
+    }
+
+    .mobile-hr {
+        color: #fff;
+        border-color: #fff;
+        width: 345px;
+        margin-left: 0px;
+    }
+
+    .cell-phone {
+        right: 130px;
+        top: 20px;
+        width: 120px;
+        height: 170px;
+    }
+
+    .sponsors-wrapper {
+        padding: 32px 0;
+
+    }
+    .sponsors-wrapper img {
+        height: 14px;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .adress-text {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .footer-60 {
+        width: 50%;
+        padding: 24px 24px 0 24px;
+    }
+
+    .footer-40 {
+        width: 50%;
+    }
+
+    .footer-form-text h3 {
+        font-size: 26px;
+        line-height: 32px;
+        padding-bottom: 24px;
+    }
+    .footer-top-input {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 8px;
+        width: 155px;
+        font-size: 12px;
+        line-height: 16px;
+        padding-left: 8px;
+    }
+    .footer-form textarea {
+        padding-left: 6px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-form button {
+        padding: 8px 19px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .footer-contacts {
+        padding: 24px 24px 0 24px;
+    }
+    .massenger-icons {
+        padding-right: 14px;
+    }
+    .footer-contacts p {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 34px;
+    }
+
+    .footer-contacts h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .footer-contacts h4 {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 9px;
+    }
+
+    .footer-bottom {
+        padding: 18px 24px;
+        font-size: 10px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .slick-prev {
+        left: 255px !important;
+    }
+
+    .comment-slider .slick-prev {
+        left: 255px !important;
+    }
+
+    .history-of-success {
+        padding-bottom: 50px;
+    }
+
+    .history-of-success img {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projects-title h3 {
+        font-size: 20px;
+    }
+    .main-news-header h3 {
+        font-size: 20px;
+    }
+
+    .comment-slider .slick-prev {
+        left: 225px !important;
+    }
+
+    .all-events-header h3 {
+        font-size: 28px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 4px 8px;
+    }
+
+    .slick-prev {
+        left: 225px !important;
+    }
+
+    .app-download {
+        padding-left: 20px;
+    }
+
+    .app-download img {
+            width: 130px;
+    }
+
+    .cell-phone {
+        right: 100px;
+        top: 30px;
+    }
+
+    .bag-boy, .girls-voice, .room {
+        max-height: 158px;
+    }
+
+    .features-item {
+        min-width: 280px;
+    }
+}
+.hidden {
+    display: none !important;
 }

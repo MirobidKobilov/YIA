@@ -1928,6 +1928,7 @@ header {
 
     .nav-ul li.active:after {
         bottom: -20px;
+    }
 }
 
 /* ------------------------------------- */
@@ -2344,13 +2345,6 @@ header {
         color: #0188FF;
     }
 
-
-
-
-
-
-
-
     .mobile-wrapper {
         display: flex;
         align-items: center;
@@ -2685,6 +2679,7 @@ header {
         min-width: 280px;
     }
 }
+
 .hidden {
     display: none !important;
 }

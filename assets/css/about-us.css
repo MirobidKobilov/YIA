@@ -1,0 +1,81 @@
+.header {
+    margin-bottom: 100px;
+}
+
+.about-us-hero {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.about-us-nav ul {
+    list-style-type: none;
+    padding: 0;
+    border-left: 2px solid #E9E9E9;
+}
+
+.about-us-nav li {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    margin-bottom: 16px;
+}
+
+.about-us-nav li a {
+    color: #777777;
+}
+
+.about-us-nav li:hover {
+    background-color: #F3F3F3;
+}
+
+.about-us-nav li:active, .about-us-nav li:focus {
+    background-color: #fff;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #0286FA;
+    font-weight: bold;
+    border-left: 4px solid #0286FA;
+
+}
+
+.about-us-nav li a:active {
+    color: #0286FA;
+
+}
+
+.about-agency {
+    margin-bottom: 48px;
+}
+
+.about-agency h2 {
+    padding-bottom: 8px;
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1E1F56;
+}
+
+.about-agency p {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 200%;
+    color: #444444;
+}
+
+.about-us-img-wrapper {
+    display: flex;
+    margin-bottom: 62px;
+    margin-top: 62px;
+}

@@ -42,6 +42,10 @@ header {
     padding: 24px 24px 0 24px;
 }
 
+.navbar-top a:hover {
+    color: #fff;
+}
+
 .btn {
     padding: 0 !important;
 }
@@ -152,10 +156,6 @@ header {
     outline: none;
     border-bottom: 1px solid #CFCFCF;
   }
-
-.nav-search:hover {
-    background: transparent;
-}
 
 .hero-h1 {
     font-family: Yandex Sans Text;
@@ -976,6 +976,8 @@ header {
     line-height: 62px;
     text-align: center;
     color: #FFFFFF;
+    padding-top: 10;
+    margin-bottom: 0;
 }
 
 .bday-date h5 {
@@ -1640,7 +1642,7 @@ header {
     line-height: 22px;
     color: #A5A5A5;
 
-    width: 274px;
+    width: 370px;
     outline: none;
 }
 
@@ -2066,6 +2068,10 @@ header {
     .massenger-icons {
         padding-right: 12px;
     }
+    .bday-date h4 {
+        font-size: 36px;
+        line-height: 46px;
+    }
 
 }
 
@@ -2180,6 +2186,11 @@ header {
         top: 20px;
         width: 120px;
         height: 170px;
+    }
+
+    .bday-date h4 {
+        font-size: 36px;
+        line-height: 46px;
     }
 
     .sponsors-wrapper {
@@ -2630,6 +2641,10 @@ header {
     .history-of-success img {
         padding-top: 80px;
     }
+
+    .join-btn {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -2677,6 +2692,10 @@ header {
 
     .features-item {
         min-width: 280px;
+    }
+
+    .join-btn {
+        margin-top: 10px;
     }
 }
 

@@ -36,7 +36,115 @@ header {
     z-index: -1;
 }
 
-.navbar-top {
+.header-md-circle {
+    transform: translateY(0px);
+    animation: popup 1s .2s linear;
+  }
+  @keyframes popup {
+    0% {
+      transform: translateY(-500px);
+    }
+    10% {
+      transform: translateY(-450px);
+    }
+    20% {
+      transform: translateY(-400px);
+    }
+    30% {
+      transform: translateY(-350px);
+    }
+    40% {
+        transform: translateY(-300px);
+    }
+    50% {
+        transform: translateY(-250px);
+    }
+    60% {
+        transform: translateY(-200px);
+    }
+    70% {
+        transform: translateY(-150px);
+    }
+    80% {
+        transform: translateY(-100px);
+    }
+    90% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+
+.header-sm-circle {
+    transform: translateX(0px);
+    animation: mm 1s .2s linear;
+  }
+  @keyframes mm {
+    0% {
+      transform: translateX(1000px) scale(.1);  
+    }
+    0% {
+        transform: translateX(300px) scale(1);
+    }
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+  }
+
+
+.header-lg-cicrle {
+    animation: scl 1s .2s linear;
+}
+@keyframes scl {
+    0% {
+        transform: translateX(1000px) scale(.5);
+    }
+
+    50% {
+        transform: translateX(-300px) scale(1.2);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.header-ellipse {
+    animation: ellip 1s .2s linear;
+}
+@keyframes ellip {
+    0% {
+        transform: translateX(-1000px) scale(.1);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes hover-circle {
+    0% {
+        transform: translateX(100px) scale(.1);
+    }
+
+    70% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.hover-circle {
+    animation: hover-circle 1s .2s linear;
+    /* animation-direction: reverse; */
+}
+
+/* -------------------------------------- */
+
+.navbar-top {   
     margin-bottom: 24px;
     display: flex;
     padding: 24px 24px 0 24px;
@@ -219,6 +327,7 @@ header {
     z-index: 4;
     min-width: 350px;
     min-height: 300px;
+    overflow: hidden;
 }
 
 .feature-hover-bg {
@@ -2701,4 +2810,10 @@ header {
 
 .hidden {
     display: none !important;
+}
+
+.about-us-nav.fixed {
+    position: fixed;
+    top: 120px;
+    width: 255px;
 }

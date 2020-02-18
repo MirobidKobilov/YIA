@@ -470,23 +470,26 @@ header {
     color: #0088FF;
 }
 
-.hands {
-    background-image: url(../../img/hands.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
-
  .hands-gr {
     background: linear-gradient(89.91deg, rgba(255, 255, 255, 0.9) 44%, rgba(255, 255, 255, 0) 101.05%);
     border-radius: 10px;
     border: 1px solid #D8D8D8;
     border-radius: 10px;
-    min-height: 249px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
 }
 
-.hands p {
+.hands-gr img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 777px;
+    z-index: -1;
+}
+
+.hands-gr p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
@@ -497,7 +500,7 @@ header {
     padding-top: 28px;
 }
 
-.hands h5 {
+.hands-gr h5 {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: bold;
@@ -522,22 +525,26 @@ header {
     color: #fbfbfb;
 }
 
-.student-of-year {
-    background-image: url(../../img/student_of_year.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
 
 .student-of-year-gr {
     background: linear-gradient(90.11deg, #FFFFFF 41.84%, rgba(255, 255, 255, 0) 101.01%);
     border: 1px solid #D8D8D8;
     border-radius: 10px;
-    min-height: 249px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
 }
 
-.student-of-year p {
+.student-of-year-gr img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 376px;
+    z-index: -1;
+}
+
+.student-of-year-gr p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
@@ -549,7 +556,7 @@ header {
     padding-bottom: 38px;
 }
 
-.student-of-year h5 {
+.student-of-year-gr h5 {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: bold;
@@ -577,35 +584,37 @@ header {
     margin-bottom: 64px;
 }
 
-.incubator {
-    background-image: url(../../img/suit.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
-
 .incubator-gr {
     background: linear-gradient(90.11deg, #FFFFFF 41.84%, rgba(255, 255, 255, 0) 101.01%);
     border: 1px solid #D8D8D8;
     border-radius: 10px;
-    min-height: 249px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
 }
 
-.incubator p {
+.incubator-gr img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 376px;
+    z-index: -1;
+}
+
+.incubator-gr p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #A5A5A5;
-
     padding-top: 28px;
     padding-left: 32px;
     padding-bottom: 39px;
 }
 
-.incubator h5 {
+.incubator-gr h5 {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: bold;
@@ -629,24 +638,25 @@ header {
     color: #fbfbfb;
 }
 
-.patriot {
-    background-image: url(../../img/flag.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    
-
-}
-
 .patriot-gr {
     background: linear-gradient(90.11deg, #FFFFFF 41.84%, rgba(255, 255, 255, 0) 101.01%);
     border: 1px solid #D8D8D8;
     border-radius: 10px;
-    min-height: 249px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
 }
 
-.patriot p {
+.patriot-gr img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 376px;
+    z-index: -1;
+}
+
+.patriot-gr p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
@@ -658,7 +668,7 @@ header {
     padding-bottom: 38px;
 }
 
-.patriot h5 {
+.patriot-gr h5 {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: bold;
@@ -682,22 +692,25 @@ header {
     color: #fbfbfb;
 }
 
-.we-together {
-    background-image: url(../../img/students.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
-
 .we-together-gr {
     background: linear-gradient(90.11deg, #FFFFFF 41.84%, rgba(255, 255, 255, 0) 101.01%);
     border: 1px solid #D8D8D8;
     border-radius: 10px;
-    min-height: 249px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
 }
 
-.we-together p {
+.we-together-gr img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 376px;
+    z-index: -1;
+}
+
+.we-together-gr p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
@@ -710,7 +723,7 @@ header {
     
 }
 
-.we-together h5 {
+.we-together-gr h5 {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: bold;
@@ -1601,30 +1614,56 @@ header {
 }
 
 .first-add {
-    background-image: url(../../img/mini_bg_1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     padding: 24px 24px 15px 24px;
     border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.first-add img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 400px;
 }
 
 .second-add {
-    background-image: url(../../img/mini_bg_2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     padding: 24px 24px 15px 24px;
     border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.second-add img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 400px;
 }
 
 .third-add {
-    background-image: url(../../img/mini_bg_3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     padding: 24px 24px 15px 24px;
     border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+.third-add img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 400px;
 }
 
 .afisha h5 {

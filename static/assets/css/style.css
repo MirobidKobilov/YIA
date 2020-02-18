@@ -173,7 +173,7 @@ header {
     border: none;
     width: 10px;
     height: 5px;
-    background-image: url(../../img/arrow.svg);
+    background-image: url(../../../static/img/arrow.svg);
     background-position: center center;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -237,7 +237,7 @@ header {
     width: 95px;
     display: inline-block;
     border: none;
-    background-image: url(../../img/search_icon.svg);
+    background-image: url(../../../static/img/search_icon.svg);
     background-repeat: no-repeat;
     background-position: 12px center;
     padding-left: 20px;
@@ -747,7 +747,7 @@ header {
 }
 
 .success {
-    background-image: url(../../img/gray_bg_1.png);
+    background-image: url(../../../static/img/gray_bg_1.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -798,30 +798,30 @@ header {
 }
 
 .comment-slider .slick-next, .slick-prev {
-    background-image: url(../../img/Vector-gray-right.svg) !important;
+    background-image: url(../../../static/img/Vector-gray-right.svg) !important;
     right: 80px !important;
     top: 470px !important;
 }
 
 .comment-slider .slick-next {
-    background-image: url(../../img/Vector-gray-right.svg) !important;
+    background-image: url(../../../static/img/Vector-gray-right.svg) !important;
 }
 
 .comment-slider .slick-prev {
-    background-image: url(../../img/Vector-gray-left.svg) !important;
+    background-image: url(../../../static/img/Vector-gray-left.svg) !important;
     top: 470px !important;
     left: 580px !important;
 }
 
 .comment-slider .slick-prev:focus,
 .slick-prev:hover {
-	background: url(../../img/Vector-gray-left.svg) !important;
+	background: url(../../../static/img/Vector-gray-left.svg) !important;
 	background-size: contain !important;
 	z-index: 4;
 }
 
 .comment-slider .slick-next:focus, .slick-next:hover {
-	background: url(../../img/Vector-gray-right.svg) !important;
+	background: url(../../../static/img/Vector-gray-right.svg) !important;
     background-size: contain !important;
 }
 
@@ -932,7 +932,7 @@ header {
 }
 
 .slick-next, .slick-prev {
-    background: url(../../img/Vector-right.svg) !important;
+    background: url(../../../static/img/Vector-right.svg) !important;
     background-size: contain !important;
     background-repeat: no-repeat;
     width: 30px !important;
@@ -946,7 +946,7 @@ header {
 }
 
 .slick-next:focus, .slick-next:hover {
-	background: url(../../img/Vector-right.svg) !important;
+	background: url(../../../static/img/Vector-right.svg) !important;
     background-size: contain !important;
 }
 
@@ -956,14 +956,14 @@ header {
 }
 
 .slick-prev {
-	background: url(../../img/Vector-left.svg) !important;
+	background: url(../../../static/img/Vector-left.svg) !important;
 	left: 1040px !important;
     background-size: contain !important;
 }
 
 .slick-prev:focus,
 .slick-prev:hover {
-	background: url(../../img/Vector-left.svg) !important;
+	background: url(../../../static/img/Vector-left.svg) !important;
 	background-size: contain !important;
 	z-index: 4;
 }
@@ -1387,7 +1387,7 @@ header {
 }
 
 .interview-3 {
-    background: url(../../img/medium_blue_bg.svg) #25B1FF;
+    background: url(../../../static/img/medium_blue_bg.svg) #25B1FF;
     background-size: contain;
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -1434,7 +1434,7 @@ header {
 }
 
 .quotes {
-    background-image: url(../../img/gray_bg_2.png);
+    background-image: url(../../../static/img/gray_bg_2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom -170px center;
@@ -1726,7 +1726,7 @@ header {
 }
 
 .adress {
-    background-image: url(../../img/adress-img.png);
+    background-image: url(../../../static/img/adress-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -1855,7 +1855,7 @@ header {
 }
 
 .footer-contacts {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url(../../img/footer-img.png);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url(../../../static/img/footer-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 67px 124px;
@@ -2451,7 +2451,7 @@ header {
     .mobile-search {
         border: none;
         padding-left: 25px;
-        background-image: url(../../img/search_icon.svg);
+        background-image: url(../../../static/img/search_icon.svg);
         background-repeat: no-repeat;
         background-position: left 5px center;
         width: 100%;

@@ -52,7 +52,7 @@
 }
 
 .about-agency {
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 
 .about-agency h2 {
@@ -65,17 +65,170 @@
     color: #1E1F56;
 }
 
+.about-agency-wrapper {
+    margin-bottom: 50px;
+}
+
 .about-agency p {
     font-family: Yandex Sans Text;
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 200%;
     color: #444444;
 }
 
-.about-us-img-wrapper {
-    display: flex;
-    margin-bottom: 62px;
-    margin-top: 62px;
+.main-tasks h2 {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1E1F56;
+    margin-bottom: 48px;
+}
+
+.main-tasks-wrapper .digits {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: #0487FC;
+    background-color: rgba(4, 135, 252, 0.1);
+    padding: 5 24px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 14px;
+}
+
+.main-tasks-wrapper h3 {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1E1F56;
+}
+
+.main-tasks-wrapper p {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #444444;
+}
+
+.upper-main-tasks {
+    margin-bottom: 30px;
+}
+
+.lower-main-tasks {
+    margin-bottom: 64px;
+}
+
+.kamalak {
+    margin-bottom: 64px;
+}
+
+.kamalak-wrapper {
+    padding: 48px 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.kamalak-wrapper p {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444444;
+}
+
+.structure {
+    margin-bottom: 60px;
+}
+
+.structure h2 {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1E1F56;
+    margin-bottom: 48px;
+}
+
+.structure img {
+    width: 100%;
+}
+
+.administration h2 {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1E1F56;
+    margin-bottom: 38px;
+}
+
+.administration-wrapper {
+    background-color: #142134;
+    border-radius: 20px;
+    position: relative;
+    min-height: 390px;
+}
+
+.administration-wrapper img {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 45;
+}
+
+.admin-circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.administration-wrapper h3 {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FBFBFB;
+
+}
+
+.administration-wrapper h4 {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FBFBFB;
+    padding-bottom: 64px;
+
+}
+
+.administration-wrapper p {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+    padding-bottom: 12px;
+}
+
+.administration-wrapper div {
+    padding-left: 351px;
+    padding-top: 90px;
 }

@@ -228,7 +228,7 @@ header {
     content: "";
     width: 24px;
     position: absolute;
-    bottom: -23;
+    bottom: -23px;
     left: 0;
     border-bottom: 2px solid #0088FF;
 }
@@ -1902,7 +1902,7 @@ header {
 }
 
 .massenger-icons {
-    padding-right: 24px;
+    margin-right: 24px;
 }
 
 .header-scroll {

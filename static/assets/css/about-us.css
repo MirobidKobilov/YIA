@@ -182,6 +182,7 @@
     border-radius: 20px;
     position: relative;
     min-height: 390px;
+    margin-bottom: 48px;
 }
 
 .administration-wrapper img {
@@ -231,4 +232,62 @@
 .administration-wrapper div {
     padding-left: 351px;
     padding-top: 90px;
+}
+
+.vice-presidents {
+    margin-bottom: 64px;
+}
+
+.vice-presidents img {
+    display: inline-block;
+    width: 100%;
+}
+
+.vice-wrapper h4 {
+    padding-top: 38px;
+    padding-bottom: 8px;
+
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.vice-wrapper p {
+    padding-bottom: 8px;
+}
+
+.vice-text {
+    margin-bottom: 8px;
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.vice-bold-text {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.administration button {
+    font-family: Yandex Sans Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #0188FF;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 54px;
+    margin-left: 280px;
+    margin-bottom: 64px;
 }

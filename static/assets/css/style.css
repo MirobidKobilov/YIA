@@ -327,6 +327,7 @@ header {
     z-index: 4;
     min-width: 350px;
     min-height: 300px;
+    overflow: hidden;
 }
 
 .feature-hover-bg {

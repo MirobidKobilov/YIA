@@ -433,6 +433,10 @@ header {
     padding: 0 24px;
 }
 
+.projects {
+    margin-bottom: 64px;
+}
+
 .projects-title h3 {
     font-family: Yandex Sans Text;
     font-style: normal;
@@ -581,7 +585,7 @@ header {
 
 .projects-second-floor {
     margin-top: 32px;
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
 }
 
 .incubator-gr {

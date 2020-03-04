@@ -37,59 +37,28 @@ header {
 }
 
 .header-md-circle {
-    transform: translateY(0px);
+    transform: translateX(0) translateY(0);
     animation: popup 1s .2s linear;
   }
   @keyframes popup {
     0% {
-      transform: translateY(-500px);
-    }
-    10% {
-      transform: translateY(-450px);
-    }
-    20% {
-      transform: translateY(-400px);
-    }
-    30% {
-      transform: translateY(-350px);
-    }
-    40% {
-        transform: translateY(-300px);
-    }
-    50% {
-        transform: translateY(-250px);
-    }
-    60% {
-        transform: translateY(-200px);
-    }
-    70% {
-        transform: translateY(-150px);
-    }
-    80% {
-        transform: translateY(-100px);
-    }
-    90% {
-        transform: translateY(-50px);
+      transform: translateY(250px) translateX(1000px) scale(.1);
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0) translateX(0) scale(1);
     }
   }
 
 .header-sm-circle {
-    transform: translateX(0px);
     animation: mm 1s .2s linear;
   }
   @keyframes mm {
     0% {
-      transform: translateX(1000px) scale(.1);  
-    }
-    0% {
-        transform: translateX(300px) scale(1);
-    }
-    100% {
-        transform: translateX(0px) scale(1);
-    }
+        transform: translateY(250px) translateX(1200px) scale(.1);
+      }
+      100% {
+          transform: translateY(0) translateX(0) scale(1);
+      }
   }
 
 
@@ -98,16 +67,11 @@ header {
 }
 @keyframes scl {
     0% {
-        transform: translateX(1000px) scale(.5);
-    }
-
-    50% {
-        transform: translateX(-300px) scale(1.2);
-    }
-
-    100% {
-        transform: translateX(0px) scale(1);
-    }
+        transform: translateY(250px) translateX(1200px) scale(.1);
+      }
+      100% {
+          transform: translateY(0) translateX(0) scale(1);
+      }
 }
 
 .header-ellipse {
@@ -115,17 +79,17 @@ header {
 }
 @keyframes ellip {
     0% {
-        transform: translateX(-1000px) scale(.1);
+        transform: translateX(100px) translateY(400px) scale(.1);
     }
 
     100% {
-        transform: translateX(0px) scale(1);
+        transform: translateX(0px) translateY(0px) scale(1);
     }
 }
 
 @keyframes hover-circle {
     0% {
-        transform: translateX(100px) scale(.1);
+        transform: translateX(200px) translateY(200px) scale(.1);
     }
 
     70% {

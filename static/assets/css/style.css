@@ -92,10 +92,6 @@ header {
         transform: translateX(200px) translateY(200px) scale(.1);
     }
 
-    70% {
-        transform: translateX(50px);
-    }
-
     100% {
         transform: translateX(0px) scale(1);
     }
@@ -291,7 +287,7 @@ header {
     z-index: 4;
     min-width: 350px;
     min-height: 300px;
-    overflow: hidden;
+    margin-bottom: 24px;
 }
 
 .feature-hover-bg {

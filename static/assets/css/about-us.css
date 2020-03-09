@@ -291,3 +291,94 @@
     margin-left: 280px;
     margin-bottom: 64px;
 }
+
+.hands-img {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 778px) {
+
+    .administration button {
+        padding: 18px 22px;
+    }
+
+    .administration-wrapper div {
+        padding-left: 220px;
+        padding-top: 42px;
+        padding-right: 12px;
+    }
+
+    .administration-wrapper {
+        min-height: 360px;
+    }
+    .administration-wrapper h4 {
+        padding-bottom: 58px;
+        font-size: 20px;
+    }
+    .administration-wrapper h3 {
+        font-size: 22px;
+    }
+
+    .administration-wrapper p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .administration-wrapper div {
+        padding-left: 220px;
+        padding-top: 42px;
+        padding-right: 12px;
+    }
+
+    .about-agency h2 {
+        margin-top: 100px;
+    }
+
+    .administration button {
+        padding: 8px 14px;
+        font-size: 12px;
+        margin-left: 0px;
+    }
+
+    .administration-wrapper {
+        min-height: 360px;
+    }
+    .administration-wrapper h4 {
+        padding-bottom: 58px;
+        font-size: 18px;
+    }
+    .administration-wrapper h3 {
+        font-size: 20px;
+    }
+
+    .administration-wrapper p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .administration-wrapper h4 {
+        padding-bottom: 32px;
+        font-size: 18px;
+    }
+
+    .administration-wrapper div {
+        padding-left: 170px;
+        padding-top: 42px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .administration-wrapper .hide-mobile {
+        display: none;
+    }
+}

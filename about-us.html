@@ -307,16 +307,15 @@
                 <div class="col-lg-3">
                     <div class="about-us-nav">
                         <ul>
-                            <li><a href="#">Об Агенстве</a></li>
-                            <li><a href="#">Цели и задачи</a></li>
-                            <li><a href="#">Дома молодёжи</a></li>
-                            <li><a href="#">Структура</a></li>
-                            <li><a href="#">Цели и задачи</a></li>
+                            <li><a href="#about_agency">Об Агенстве</a></li>
+                            <li><a href="#goals">Цели и задачи</a></li>
+                            <li><a href="#structure">Структура</a></li>
+                            <li><a href="#administration">Руководство</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="about-agency">
+                <div class="col-lg-9" id="about-us-content">
+                    <div class="about-agency" id="about_agency">
                         <h2>Об агенстве</h2>
                         <div class="row about-agency-wrapper">
                             <div class="col-md-7">
@@ -347,7 +346,7 @@
                             оказание поддержки в воплощении их интеллектуального и творческого потенциала.
                         </p>
                     </div>
-                    <div class="main-tasks">
+                    <div class="main-tasks" id="goals">
                         <h2>Основные задачи:</h2>
                         <div class="main-tasks-wrapper">
                             <div class="upper-main-tasks row">
@@ -394,7 +393,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="kamalak">
+                        <div class="kamalak" id="kamalak">
                             <div class="row kamalak-wrapper">
                                 <div class="col-md-5">
                                     <p>Кроме того, при Союзе и его подразделениях организованы отделения «Камалак»,
@@ -409,11 +408,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="structure">
+                    <div class="structure" id="structure">
                         <h2>Структура агенства</h2>
                         <img src="./static/img/tree.svg" alt="">
                     </div>
-                    <div class="administration">
+                    <div class="administration" id="administration">
                         <h2>Руководство</h2>
                         <div class="administration-wrapper">
                             <img src="./static/img/Sadullayev.png" alt="">
@@ -576,8 +575,34 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+        $(".about-us-nav li a").click(function () {
+            var target = $(this).attr('href');
+
+            $(".about-us-nav li a").removeClass('active');
+            $(this).addClass('active');
+
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 99
+            }, 1000);
+        });
+
+        function offset(el) {
+            var rect = el.getBoundingClientRect(),
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+        }
+
+
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
+
+            $('#about-us-content > div').each((index, el) => {
+                if (scroll >= offset(el).top - 100) {
+                    $(".about-us-nav li a").removeClass('active');
+                    $('a[href="#' + el.getAttribute('id') + '"]').addClass('active');
+                }
+            });
 
             if (scroll >= 168) {
                 $(".header-scroll").addClass("sticky");

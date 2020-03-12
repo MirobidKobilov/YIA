@@ -2077,6 +2077,21 @@ header {
         padding-bottom: 90px;
     }
 
+    .photo-wrapper .slick-prev {
+        top: unset !important;
+        /* margin-top: 52px; */
+        bottom: 0 !important;
+        margin-bottom: -45px;
+        left: 515px !important;
+    }
+    
+    
+
+    .photo-wrapper .slick-next {
+        top: unset !important;
+        margin-top: 15px;
+    }
+
     .quote-text-wrapper h5 {
         padding-top: 50px;
     }
@@ -2180,6 +2195,33 @@ header {
     .nav-ul li.active:after {
         bottom: -20px;
     }
+
+    .news-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+    .news-slider .slick-prev {
+        left: 513px !important;
+    }
+    .heads img {
+        width: 100%;
+    }
+    .slick-slide > div {
+        width: 247px;
+    }
+
+    .about-us-nav.fixed {
+        width: 200px !important;
+    }
+
+    .play-icon {
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+        left: 40px;
+        width: auto;
+    }
 }
 
 /* ------------------------------------- */
@@ -2187,6 +2229,20 @@ header {
 @media screen and (max-width: 992px) {
     .slick-prev {
         left: 620px !important;
+    }
+
+    .projects-inner-header {
+        background-color: unset !important;
+    }
+
+    .hero-h1 {
+        font-family: Yandex Sans Text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #007bff;
+        padding-top: 30px;
     }
     
     .quote-text-wrapper h5 {
@@ -2333,6 +2389,20 @@ header {
 @media screen and (max-width: 767px) {
     .slick-prev {
         left: 440px !important;
+    }
+    .photo-wrapper .slick-prev {
+        top: unset !important;
+        /* margin-top: 52px; */
+        bottom: 0 !important;
+        margin-bottom: -45px;
+        left: 0!important;
+    }
+    .news-slider {
+        margin-bottom: 64px;
+        margin-right: -10px;
+    }
+    .news-slider .slick-prev {
+        left: 333px !important;
     }
 
     .dots {
@@ -2486,6 +2556,23 @@ header {
 @media screen and (max-width: 576px) { 
     .header-noscroll {
         display: none;
+    }
+
+    .news-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+    .news-slider .slick-prev {
+        left: 350px !important;
+    }
+
+    .news-slide-page {
+        display: none;
+    }
+
+    .news-slider .slick-prev {
+        left: 0 !important;
     }
 
     .header-scroll {
